@@ -47,9 +47,9 @@ const ajax = {
     },
   },
   // 发送ajax请求。
-  sendRequest(options, data) {
+  sendRequest(options, reqData) {
     const requestOptions = options || {};
-    const requestData = data || {};
+    const requestData = reqData || {};
 
     console.log(options);
     axios({
@@ -58,6 +58,30 @@ const ajax = {
       method: requestOptions.method || 'post',
       params: requestData.params || {},
       data: requestData.data || {},
+      transformRequest: [
+        (data) => {
+          let count = 0;
+          let ret = '';
+          const formData = new FormData();
+
+          for (const key in data) {
+            if (Object.prototype.hasOwnProperty.call(data, key)) {
+              if (typeof data[key] === 'object') {
+                count += 1;
+              }
+
+              formData.append(key, data[key]);
+              ret += `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}&`;
+            }
+          }
+
+          if (count > 0) {
+            return formData;
+          }
+
+          return ret.substring(0, ret.length - 1);
+        },
+      ],
       headers: requestOptions.headers || {
         'Content-Type': 'application/x-www-form-urlencoded',
       },

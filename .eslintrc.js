@@ -7,6 +7,7 @@ module.exports = {
   },
   "extends": "airbnb",
   "rules": {
+    "no-restricted-syntax": "off",
     // 生成环境下删除console
     "no-console": "off",
     // 变量声明后需要空一行

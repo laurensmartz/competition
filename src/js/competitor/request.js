@@ -9,7 +9,6 @@ const requestOptions = {
 const request = {
   login(requestData) {
     requestOptions.url = apiConfig.login;
-
     console.log(requestOptions);
     ajax.sendRequest(requestOptions, requestData);
   },

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import request from 'JSCommon/competitor/request'
+import request from "JSCommon/competitor/request";
 
 export default {
   data() {
@@ -13,10 +13,13 @@ export default {
   },
   methods: {},
   mounted() {
-    console.log(request)
     request.login({
+      data: {
+        username: "admin",
+        password: "123456"
+      },
       successFun: () => {
-        console.log('success');
+        console.log("success");
       }
     });
   },
