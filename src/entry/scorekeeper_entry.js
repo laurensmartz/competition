@@ -1,6 +1,6 @@
 // vue
 import Vue from 'vue';
-import router from '../router/admin_router';
+import router from '../router/scorekeeper_router';
 
 // Vue.config.debug = true
 Vue.config.devtools = true;

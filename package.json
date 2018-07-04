@@ -4,8 +4,8 @@
   "author": "laurensmartz",
   "private": true,
   "scripts": {
-    "admin-dev": "webpack-dev-server --inline --progress --config build/admin/webpack.dev.conf.js",
-    "admin-build": "webpack -p --config build/admin/webpack.prod.conf.js",
+    "scorekeeper-dev": "webpack-dev-server --inline --progress --config build/scorekeeper/webpack.dev.conf.js",
+    "scorekeeper-build": "webpack -p --config build/scorekeeper/webpack.prod.conf.js",
     "competitor-dev": "webpack-dev-server --inline --progress --config build/competitor/webpack.dev.conf.js",
     "competitor-build": "webpack -p --config build/competitor/webpack.prod.conf.js",
     "judge-dev": "webpack-dev-server --inline --progress --config build/judge/webpack.dev.conf.js",

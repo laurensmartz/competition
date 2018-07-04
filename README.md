@@ -2,7 +2,7 @@
 中锐竞赛管理平台
 
 # 名称解释
-admin：管理后台
+scorekeeper：统分员
 competitor：选手
 judge：裁判
 jury：评委
@@ -21,7 +21,7 @@ postcss.config.js：postcss配置文件。
 
 # 目录结构
 
-build/下有四个文件夹（admin、competitor、judge、jury），分别对应四个端的webpack配置文件。
+build/下有四个文件夹（scorekeeper、competitor、judge、jury），分别对应四个端的webpack配置文件。
 
 src/：
 component：组件目录。
@@ -39,13 +39,13 @@ view：页面。
 
 # 项目运行
 
-admin-dev：本地运行管理平台。
-admin-build：将管理平台打包输出到dist/admin目录。
+scorekeeper-dev：本地运行管理平台。
+scorekeeper-build：将管理平台打包输出到dist/admin目录。
 
 competitor-dev：本地运行选手端。
 competitor-build：将选手端打包输出到dist/competitor目录。
 
-例如：npm run admin-dev：启动项目并在本地webpack-server-dev上运行。
+例如：npm run scorekeeper-dev：启动项目并在本地webpack-server-dev上运行。
 
 裁判端和评委端类似，不再赘述，详情可参看package.json文件。
 

@@ -10,11 +10,11 @@ function resolve(dir) {
 
 module.exports = {
   entry: {
-    main: resolve('src/entry/admin_entry.js'),
+    main: resolve('src/entry/scorekeeper_entry.js'),
     vendor: ['vue', 'vue-router', 'jquery'],
   },
   output: {
-    path: resolve('dist/admin'),
+    path: resolve('dist/scorekeeper'),
     filename: 'js/[name]-[hash].bundle.js',
   },
   resolve: {

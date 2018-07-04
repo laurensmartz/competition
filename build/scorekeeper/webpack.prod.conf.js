@@ -4,7 +4,7 @@ const baseWebpackConfig = require('./webpack.base.conf');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 // the path(s) that should be cleaned
-const pathsToClean = ['dist/admin'];
+const pathsToClean = ['dist/scorekeeper'];
 
 function resolve(dir) {
   return path.join(__dirname, '../../', dir);
