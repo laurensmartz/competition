@@ -28,7 +28,7 @@ module.exports = {
     // 依赖"eslint-import-resolver-webpack": "^0.8.4"
     "import/resolver": {
       "webpack": {
-        "config": './build/admin/webpack.base.conf.js',
+        "config": './build/competitor/webpack.base.conf.js',
       }
     },
   },

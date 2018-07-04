@@ -2,7 +2,7 @@ const path = require('path');
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const templatePath = path.resolve(__dirname, '../../src/template');
+const templatePath = path.resolve(__dirname, '../../src/template/jury');
 
 function resolve(dir) {
   return path.join(__dirname, '../../', dir);
@@ -85,7 +85,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: `${templatePath}/index/index.html`,
+      template: `${templatePath}/index.html`,
       chunks: ['vendor', 'main'],
     }),
     new CommonsChunkPlugin({
