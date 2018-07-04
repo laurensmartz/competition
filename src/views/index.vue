@@ -18,8 +18,9 @@ export default {
         username: "admin",
         password: "123456"
       },
-      successFun: () => {
-        console.log("success");
+      successFun: (responseData) => {
+        console.log(responseData);
+        console.log("success!");
       }
     });
   },

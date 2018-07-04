@@ -49,4 +49,40 @@ competitor-build：将选手端打包输出到dist/competitor目录。
 
 裁判端和评委端类似，不再赘述，详情可参看package.json文件。
 
+# 发送ajax请求
+
+ajax请求发送文件（公用）：src/js/common/ajax.js
+接口配置文件：src/js/端目录/config/api_config.js
+服务器配置文件：src/js/端目录/config/server_config.js
+请求配置文件：src/js/端目录/request.js
+
+在request.js文件里配置好请求的选项：
+{
+  url: <String>,  // 必填
+  baseURL: <String>,  // 必填
+  method: 'post' // 默认,
+  responseType: 'json'  // 默认,
+}
+
+在request.js文件里封装好每个请求，在view页面直接调用，调用时传递请求参数，格式：
+{
+  [//] <发送请求时的data参数>
+  data: {
+    ...
+  },
+  [//] <发送请求时的params参数>
+  params: {
+    ...
+  },
+  [//] <请求成功的回调函数>
+  successFun: (responseData) {
+    ...
+  },
+  [//] <请求成功的回调函数>
+  errorFun: (error) {
+    ...
+  }
+}
+
+
 

@@ -53,7 +53,7 @@ const ajax = {
 
     console.log(options);
     axios({
-      baseURL: options.baseURL,
+      baseURL: requestOptions.baseURL,
       url: requestOptions.url,
       method: requestOptions.method || 'post',
       params: requestData.params || {},
