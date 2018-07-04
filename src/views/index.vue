@@ -1,11 +1,11 @@
 <template>
   <div>
-    hello world
+    hello world!!!
   </div>
 </template>
 
 <script>
-import ajax from "JSCommon/ajax";
+import request from 'JSCommon/competitor/request'
 
 export default {
   data() {
@@ -13,10 +13,10 @@ export default {
   },
   methods: {},
   mounted() {
-    console.log(ajax)
-    ajax.reqLogin({
-      success: data => {
-        console.log('success')
+    console.log(request)
+    request.login({
+      successFun: () => {
+        console.log('success');
       }
     });
   },
