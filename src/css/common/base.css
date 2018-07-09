@@ -1,0 +1,59 @@
+/*
+ * @Author: laurensmartz 
+ * @Date: 2018-07-08 13:52:46 
+ * @Last Modified by: laurensmartz
+ * @Last Modified time: 2018-07-08 14:20:00
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  box-sizing: border-box;
+  border: 1px solid #F1F1F1;
+  padding: 0 5px;
+  height: 32px;
+  width: 240px;
+  outline: none;
+  border-radius: 3px;
+}
+
+::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.bg-primary-blue {
+  background-color: #2862F4;
+}
+
+/* 按钮 */
+
+a.btn {
+  display: block;
+  text-decoration: none;
+}
+
+.primary-btn {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 100px;
+  background-color: #2862F4;
+  color: #fff;
+  border-radius: 2px;
+}

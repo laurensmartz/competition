@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import request from "JSCommon/competitor/request";
+import request from "JS/competitor/request";
 
 export default {
   data() {

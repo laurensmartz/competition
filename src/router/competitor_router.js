@@ -3,7 +3,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 // views
-import Index from 'Views/index.vue';
+import Login from 'Views/competitor/login.vue';
 
 Vue.use(Router);
 
@@ -13,7 +13,7 @@ const router = new Router({
     {
       path: '/',
       name: 'admin',
-      component: Index,
+      component: Login,
       meta: {
         auth: false,
       },

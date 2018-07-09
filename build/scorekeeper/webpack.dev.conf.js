@@ -7,6 +7,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devtool: 'eval-source-map',
   devServer: {
     host: '0.0.0.0',
+    port: '8083',
     inline: true,
     disableHostCheck: true,
     historyApiFallback: true,

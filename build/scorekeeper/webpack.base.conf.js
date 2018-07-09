@@ -25,7 +25,7 @@ module.exports = {
       Lib: resolve('lib'),
       Views: resolve('src/views'),
       Components: resolve('src/components'),
-      JSCommon: resolve('src/js'),
+      JS: resolve('src/js'),
       Images: resolve('src/images'),
       Css: resolve('src/css'),
       NodeModules: resolve('node_modules'),

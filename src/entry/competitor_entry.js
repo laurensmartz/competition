@@ -1,3 +1,4 @@
+import 'Css/common/base.css';
 // vue
 import Vue from 'vue';
 import router from '../router/competitor_router';

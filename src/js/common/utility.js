@@ -1,9 +1,9 @@
 // import $ from 'jquery';
 // import EXIF from 'exif-js';
-// import ajax from 'JSCommon/common/ajax';
+// import ajax from 'JS/common/ajax';
 // import mui from 'Lib/mui/js/mui.min';
 // import Cropper from 'cropperjs';
-import { strChineseFirstPY, oMultiDiff } from 'JSCommon/common/py';
+import { strChineseFirstPY, oMultiDiff } from 'JS/common/py';
 import CryptoJS from 'crypto-js';
 
 const utility = {

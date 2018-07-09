@@ -1,6 +1,6 @@
 import ajax from 'JS/common/ajax';
-import apiConfig from 'JS/competitor/config/api_config';
-import serverConfig from 'JS/competitor/config/server_config';
+import apiConfig from 'JS/jury/config/api_config';
+import serverConfig from 'JS/jury/config/server_config';
 
 const requestOptions = {
   url: null,

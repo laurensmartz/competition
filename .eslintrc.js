@@ -12,7 +12,7 @@ module.exports = {
     "no-console": "off",
     // 变量声明后需要空一行
     "newline-after-var": ["error", "always"],
-    // 使npm模块在devDependencies里不报错
+    // 使npm 的模块在devDependencies里不报错
     "import/no-extraneous-dependencies": ["error", {
       "devDependencies": true,
       "optionalDependencies": false,
