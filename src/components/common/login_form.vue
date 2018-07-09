@@ -9,11 +9,13 @@
           name=""
           placeholder="账号"
           class="account"
-          id="account">
+          id="account"
+          v-model="account">
         <input type="password"
           name=""
           placeholder="密码"
-          id="password">
+          id="password"
+          v-model="password">
       </div>
       <div class="submit">
         <a @click="login"
@@ -32,14 +34,17 @@ export default {
     }
   },
   data() {
-    return {}
+    return {
+      account: null,
+      password: null,
+    }
   },
   methods: {
     login() {
-      this.$emit('login')
+      this.$emit('login', this.account, this.password)
     }
   },
-  mounted() { },
+  mounted() {},
   components: {},
 }
 </script>

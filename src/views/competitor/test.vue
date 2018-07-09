@@ -14,8 +14,9 @@ export default {
     return {}
   },
   methods: {
-    login() {
-      alert('denglu')
+    login(account, password) {
+      console.log(account)
+      console.log(password);
     }
   },
   mounted() { },

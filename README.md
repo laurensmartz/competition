@@ -84,5 +84,30 @@ ajax请求发送文件（公用）：src/js/common/ajax.js
   }
 }
 
+# 组件
+common/目录下：
+countdown：倒计时 [props: timestamp, color]
+  timestamp: 传入截止日期的时间戳（毫秒）。
+  color: 传入想要显示的颜色（16进制值或者css标准色值）。
+
+  例如：
+  <countdown timestamp="1531186363000" color="red"></countdown>
+
+
+login_form：登录面板 [event: @login]
+  @login: 在父组件上监听此方法（将account、password传入父组件）
+  例如：
+  <login-form @login="login(account, password)"></login-form>
+
+  methods: {
+    login(account, password) {
+      console.log(account)
+      console.log(password);
+    }
+  },
+
+
+
+
 
 

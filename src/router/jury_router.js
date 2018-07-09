@@ -3,7 +3,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 // views
-import Index from 'Views/index.vue';
+import Index from 'Views/jury/index.vue';
 
 Vue.use(Router);
 
@@ -12,7 +12,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'admin',
+      name: 'index',
       component: Index,
       meta: {
         auth: false,
@@ -23,8 +23,7 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
   if (to.meta.auth) {
-    console.log(to);
-    console.log(111);
+    console.log('auth here');
   } else {
     next();
   }
